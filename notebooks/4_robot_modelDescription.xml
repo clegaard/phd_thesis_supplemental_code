@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fmiModelDescription fmiVersion="3.0" modelName="robot" instantiationToken="77236337-210e-4e9c-8f2c-c1a0677db21b" author="Christian Møldrup Legaard" version="0.0.1" license="MIT" generationDateAndTime="2020-10-23T19:51:25Z" variableNamingConvention="flat">
+  <CoSimulation modelIdentifier="robot" needsExecutionTool="true" canBeInstantiatedOnlyOncePerProcess="false" canGetAndSetFMUState="true" canSerializeFMUState="true" canHandleVariableCommunicationStepSize="true" />
+  <LogCategories>
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+  </LogCategories>
+  <ModelVariables>
+      
+    <Float64 name="θ" valueReference="1" variability="continuous" causality="output" initial="calculated" />
+    <Float64 name="u" valueReference="2" variability="continuous" causality="input" start="0.0" />
+  </ModelVariables>
+  <ModelStructure>
+    <Output valueReference="1" dependencies="0" />
+  </ModelStructure>
+</fmiModelDescription>
